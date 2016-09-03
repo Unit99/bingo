@@ -1,1 +1,0 @@
-Bingo is my own grid based responsive layout project
