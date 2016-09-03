@@ -1,0 +1,1 @@
+Bingo is a minimalistic grid based responsive layout project
