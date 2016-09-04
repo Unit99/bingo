@@ -1,0 +1,28 @@
+/* *****
+file: global stylesheet for Bingo framework
+site: Bingo
+site repo uri: https://github.com/Unit99/bingo
+author: Sanjib Adhya
+author uri: http://apeandme.com
+version: 0.1
+date: 09/03/2016
+
+***** */
+
+/* all partials */
+@import "compass/reset";
+@import "partials/fonts";
+@import "partials/grid";
+
+/* using mixin from fonts.scss */
+@include register-font('roboto');
+@include register-font('opensanslight');
+@include register-font('opensansregular');
+@include register-font('opensanssemibold');
+@include register-font('opensansbold');
+@include register-font('opensansextrabold');
+
+#bingo-logo{
+    @include use-registered-font('opensansextrabold');
+    font-size: 3em;
+}
