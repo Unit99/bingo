@@ -1,0 +1,112 @@
+/* *****
+file: global stylesheet for Bingo framework
+site: Bingo
+site repo uri: https://github.com/Unit99/bingo
+author: Sanjib Adhya
+author uri: http://apeandme.com
+version: 0.1
+date: 09/03/2016
+
+***** */
+/* line 17, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* **
+file: fonts mixin 
+credits: https://gist.github.com/WhatIsHeDoing/3179370
+** */
+/* _simple font url('Roboto', 'eot'); */
+/* _full-font-url('Roboto', 'woff', 'embedded-opentype', '?#iefix'); */
+/* register font('Roboto') */
+/* 
+prevent faux bold
+http://www.alistapart.com/articles/say-no-to-faux-bold/
+use-registered-font('Roboto')
+*/
+/* using mixin from fonts.scss */
+@font-face {
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/roboto/roboto-webfont.eot");
+  src: url("../fonts/roboto/roboto-webfont.woff?#iefix") format("embedded-opentype"), url("../fonts/roboto/roboto-webfont.ttf") format("truetype"), url("../fonts/roboto/roboto-webfont.svg?#roboto") format("esvg");
+}
+
+@font-face {
+  font-family: "opensans";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/opensans/opensans-webfont.eot");
+  src: url("../fonts/opensans/opensans-webfont.woff?#iefix") format("embedded-opentype"), url("../fonts/opensans/opensans-webfont.ttf") format("truetype"), url("../fonts/opensans/opensans-webfont.svg?#opensans") format("esvg");
+}
+
+/* line 19, ../sass/bingo.scss */
+#bingo-logo {
+  font-family: "opensansbold", "sans-serif";
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0;
+  font-size: 2em;
+}
