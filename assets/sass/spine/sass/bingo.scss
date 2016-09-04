@@ -9,8 +9,10 @@ date: 09/03/2016
 
 ***** */
 
+/* all partials */
 @import "compass/reset";
 @import "partials/fonts";
+@import "partials/grid";
 
 /* using mixin from fonts.scss */
 @include register-font('roboto');

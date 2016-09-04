@@ -8,6 +8,7 @@ version: 0.1
 date: 09/03/2016
 
 ***** */
+/* all partials */
 /* line 17, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -85,6 +86,10 @@ prevent faux bold
 http://www.alistapart.com/articles/say-no-to-faux-bold/
 use-registered-font('Roboto')
 */
+/* **
+file: grid mixin 
+credits: Sanjib Adhya(https://github.com/Unit99)
+** */
 /* using mixin from fonts.scss */
 @font-face {
   font-family: "roboto";
@@ -134,7 +139,7 @@ use-registered-font('Roboto')
   src: url("../fonts/opensansextrabold-webfont.woff?#iefix") format("embedded-opentype"), url("../fonts/opensansextrabold-webfont.ttf") format("truetype"), url("../fonts/opensansextrabold-webfont.svg?#opensansextrabold") format("esvg");
 }
 
-/* line 23, ../sass/bingo.scss */
+/* line 25, ../sass/bingo.scss */
 #bingo-logo {
   font-family: "opensansextrabold", "sans-serif";
   font-style: normal;
