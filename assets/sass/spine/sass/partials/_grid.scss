@@ -2,5 +2,93 @@
 file: grid mixin 
 credits: Sanjib Adhya(https://github.com/Unit99)
 ** */
+$max-col-count: 12; /* for 12 column grid system */
+$min-width: 320px;
+
+@mixin grid-width($col-count){
+    width: (100% / $max-col-count) * $col-count;
+}
+
+/* crappy mobile:min-width: 320px */
+@media only screen and (min-width: $min-width){
+    .col-xsm-1{@include grid-width(1);}
+    .col-xsm-2{@include grid-width(2);}
+    .col-xsm-3{@include grid-width(3);}
+    .col-xsm-4{@include grid-width(4);}
+    .col-xsm-5{@include grid-width(5);}
+    .col-xsm-6{@include grid-width(6);}
+    .col-xsm-7{@include grid-width(7);}
+    .col-xsm-8{@include grid-width(8);}
+    .col-xsm-9{@include grid-width(9);}
+    .col-xsm-10{@include grid-width(10);}
+    .col-xsm-11{@include grid-width(11);}
+    .col-xsm-12{@include grid-width(12);}    
+}
+
+
+/* mobile:min-width: 480px */
+@media only screen and (min-width: $min-width + 160px){
+    .col-sm-1{@include grid-width(1);}
+    .col-sm-2{@include grid-width(2);}
+    .col-sm-3{@include grid-width(3);}
+    .col-sm-4{@include grid-width(4);}
+    .col-sm-5{@include grid-width(5);}
+    .col-sm-6{@include grid-width(6);}
+    .col-sm-7{@include grid-width(7);}
+    .col-sm-8{@include grid-width(8);}
+    .col-sm-9{@include grid-width(9);}
+    .col-sm-10{@include grid-width(10);}
+    .col-sm-11{@include grid-width(11);}
+    .col-sm-12{@include grid-width(12);}    
+}
+
+
+/* tablet:min-width: 600px */
+@media only screen and (min-width: $min-width + 280px){
+    .col-med-1{@include grid-width(1);}
+    .col-med-2{@include grid-width(2);}
+    .col-med-3{@include grid-width(3);}
+    .col-med-4{@include grid-width(4);}
+    .col-med-5{@include grid-width(5);}
+    .col-med-6{@include grid-width(6);}
+    .col-med-7{@include grid-width(7);}
+    .col-med-8{@include grid-width(8);}
+    .col-med-9{@include grid-width(9);}
+    .col-med-10{@include grid-width(10);}
+    .col-med-11{@include grid-width(11);}
+    .col-med-12{@include grid-width(12);}    
+}
+
+/* desktop:min-width: 992px */
+@media only screen and (min-width: $min-width + 672px){
+    .col-lg-1{@include grid-width(1);}
+    .col-lg-2{@include grid-width(2);}
+    .col-lg-3{@include grid-width(3);}
+    .col-lg-4{@include grid-width(4);}
+    .col-lg-5{@include grid-width(5);}
+    .col-lg-6{@include grid-width(6);}
+    .col-lg-7{@include grid-width(7);}
+    .col-lg-8{@include grid-width(8);}
+    .col-lg-9{@include grid-width(9);}
+    .col-lg-10{@include grid-width(10);}
+    .col-lg-11{@include grid-width(11);}
+    .col-lg-12{@include grid-width(12);}    
+}
+
+/* large desktop:min-width: 1200px */
+@media only screen and (min-width: $min-width + 880px){
+    .col-xlg-1{@include grid-width(1);}
+    .col-xlg-2{@include grid-width(2);}
+    .col-xlg-3{@include grid-width(3);}
+    .col-xlg-4{@include grid-width(4);}
+    .col-xlg-5{@include grid-width(5);}
+    .col-xlg-6{@include grid-width(6);}
+    .col-xlg-7{@include grid-width(7);}
+    .col-xlg-8{@include grid-width(8);}
+    .col-lg-9{@include grid-width(9);}
+    .col-xlg-10{@include grid-width(10);}
+    .col-xlg-11{@include grid-width(11);}
+    .col-xlg-12{@include grid-width(12);}    
+}
 
 
